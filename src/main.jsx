@@ -1,4 +1,3 @@
-```jsx
 import React from "react";
 import { createRoot } from "react-dom/client";
 import {
@@ -18,16 +17,22 @@ import "./styles.css";
 
 const WHATSAPP = "27789044710";
 
-const whatsappUrl = (
-  message = "Hi ProTouch, I'd like to enquire about a vehicle repair."
-) => {
-  const encodedMessage = encodeURIComponent(message);
-  return "https://wa.me/" + WHATSAPP + "?text=" + encodedMessage;
-};
+function whatsappUrl(message) {
+  if (!message) {
+    message = "Hi ProTouch, I'd like to enquire about a vehicle repair.";
+  }
 
-const assetUrl = (path) => {
+  return (
+    "https://wa.me/" +
+    WHATSAPP +
+    "?text=" +
+    encodeURIComponent(message)
+  );
+}
+
+function assetUrl(path) {
   return import.meta.env.BASE_URL + path;
-};
+}
 
 const services = [
   {
@@ -466,4 +471,3 @@ function App() {
 }
 
 createRoot(document.getElementById("root")).render(<App />);
-```
