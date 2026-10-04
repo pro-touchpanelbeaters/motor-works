@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ProTouch Panel Beaters & Mechanic
 
 A responsive React + Vite marketing website based on the supplied ProTouch sign.
@@ -31,3 +32,6 @@ The WhatsApp links use `https://wa.me/27789044710` with pre-filled enquiry messa
 - Added a branded logo treatment derived from the supplied ProTouch sign.
 - Added a responsive work/gallery section using crops from the supplied business signage and imagery.
 - Added Gallery navigation.
+=======
+# motor-works
+>>>>>>> ef8f5d4c4ee1fbe08f3cc9709e068f64f30b08a5
